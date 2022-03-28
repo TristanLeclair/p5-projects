@@ -1,6 +1,7 @@
 {
   "name": "p5-projects",
   "projects": [
-    "recursive-tree-branching"
+    "recursive-tree-branching",
+    "ray-casting"
   ]
 }
