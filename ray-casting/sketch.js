@@ -30,15 +30,15 @@ let _agents = [];
 
 
 function preload() {
-	_img = loadImage('/firstProject/img/Kalladan.jpg');
+	//_img = loadImage('');
 }
 
 function setup() {
-	createCanvas(600, 600);
+	createCanvas(windowWidth, windowHeight);
 	// put setup code here
 	console.log(_particleSpeed);
 	background(100);
-	image(_img, 0, 0);
+	//image(_img, 0, 0);
 	setupUI();
 	_particleSpeed = map(_particleSpeed, 0, 100, 0.0001, 0.01);
 	_agentSpeed = map(_agentSpeed,0, 100, 0.00001, 0.001);
@@ -76,8 +76,11 @@ function setupUI() {
 	let drawWallButton = createButton('draw wall');
 	drawWallButton.mouseReleased(drawWall);
 
+	let deleteAgentsButton = createButton('delete agents');
+	deleteAgentsButton.mouseClicked(deleteAgents);
+
 	
-	buttons.push(boundaryButton, wallButton, addAgentButton, addWallButton, drawWallButton);
+	buttons.push(boundaryButton, wallButton, addAgentButton, deleteAgentsButton, addWallButton, drawWallButton);
 	positionButtons(buttons);
 }
 
@@ -88,6 +91,10 @@ function positionButtons(buttons) {
 	}
 }
 
+function deleteAgents() {
+	_agents = [];
+	_particle.deleteAgents();
+}
 
 
 function addWall() {

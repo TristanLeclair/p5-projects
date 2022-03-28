@@ -23,6 +23,10 @@ class Particle {
         this.agents.push([agent, ray]);
     }
 
+    deleteAgents() {
+        this.agents = [];
+    }
+
     updatePos(x, y) {
         this.pos.set(x,y);
     }
