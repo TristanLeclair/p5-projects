@@ -7,4 +7,4 @@ Many projects inspired by coding train videos
 
 ### Recursive tree branching
 
-![image of tree generation](img/recursive-tree-example.jpg)
+![image of tree generation](/image/recursive-tree-example.jpg)
