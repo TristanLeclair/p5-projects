@@ -27,3 +27,7 @@ npm install -g p5-manager
 
 ![Raycasting against agents and walls](images/raycasting-agents.jpg)
 ![Raycasting against walls and boundaries](images/raycasting-walls.jpg)
+
+### Boid flocking
+
+![Boid flocking animation](images/boid_animation.gif)
